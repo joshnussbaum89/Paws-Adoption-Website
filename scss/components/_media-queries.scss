@@ -1,3 +1,23 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
+
+// @media (min-width: $md) {
+//     #main-nav {
+//         @include flexy($just: space-evenly, $align: center);
+    
+//     }
+    
+//     .site-logo {
+//         @include flexy($align: center);
+//         flex-grow: 1;
+//     }
+    
+//     .nav-list {
+//         list-style: none;
+//         @include flexy();
+//         li {
+//             padding: 0 15px;
+//         }
+//     }
+// }

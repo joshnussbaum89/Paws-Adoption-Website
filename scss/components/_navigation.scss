@@ -1,3 +1,31 @@
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
+
+#main-nav {
+    @include flexy($dir: column);
+}
+
+.site-logo {
+    @include flexy($just: center, $align: center);
+    img {
+        padding: 0 10px;
+    }
+    h1 {
+        padding: 0 10px;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    @include flexy($dir: column, $align: center);
+    padding: 0;
+    li {
+        padding: 15px 0;
+        margin: 0;
+    }
+}
+
+.contact-button {
+    @include flexy($just: center);
+}

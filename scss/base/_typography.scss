@@ -1,3 +1,18 @@
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
+
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    &:visited {
+        color: black;
+    }
+    &:hover {
+        color: $pink;
+    }
+}

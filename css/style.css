@@ -340,13 +340,24 @@ template {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: pink;
+}
+
 /* ============================================= */
 /*              Body                            */
 /* ============================================= */
-* {
-  box-sizing: border-box;
-}
-
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
@@ -359,6 +370,40 @@ template {
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
+#main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-logo img {
+  padding: 0 10px;
+}
+.site-logo h1 {
+  padding: 0 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.nav-list li {
+  padding: 15px 0;
+  margin: 0;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+}
+
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
