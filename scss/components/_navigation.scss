@@ -4,6 +4,12 @@
 
 #main-nav {
     @include flexy($dir: column);
+    nav {
+        margin: 1rem;
+    }
+    button {
+        margin-bottom: 25px;
+    }
 }
 
 .site-logo {

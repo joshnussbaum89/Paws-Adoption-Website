@@ -1,3 +1,21 @@
 /* ============================================= */
 /*              Body                            */
 /* ============================================= */
+
+.body-container {
+    width: 90%;
+    background-color: $container;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+#page-description {
+    @include flexy($dir: column);
+}
+
+#about {
+    p {
+        padding: 3rem 0;
+    }
+}
