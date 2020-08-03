@@ -421,13 +421,13 @@ h5 {
 }
 
 .adopt-buttons {
-  padding: 2rem 0;
+  padding: 1rem 0 3rem;
   border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 }
 .adopt-buttons button {
-  padding: 10px 20px;
+  padding: 10px 30px;
+  margin: 0 0.5rem;
   border: 2px solid pink;
   border-radius: 5px;
   background-color: pink;
