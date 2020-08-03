@@ -458,6 +458,7 @@ h5 {
 #main-nav {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 #main-nav nav {
   margin: 0.75rem;

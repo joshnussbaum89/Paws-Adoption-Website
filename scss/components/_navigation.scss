@@ -4,6 +4,7 @@
 
 #main-nav {
     @include flexy($dir: column);
+    margin: 0 20px;
     nav {
         margin: .75rem;
     }
