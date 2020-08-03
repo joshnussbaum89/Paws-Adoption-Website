@@ -343,7 +343,6 @@ template {
 * {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
-  margin: 0 10px;
 }
 
 a {
@@ -352,6 +351,13 @@ a {
 }
 a:hover {
   color: pink;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1.5rem;
 }
 
 /* ============================================= */
@@ -365,13 +371,34 @@ a:hover {
   margin-top: 0;
 }
 
-#page-description {
-  display: flex;
-  flex-direction: column;
+#about p {
+  padding: 2rem 0;
 }
 
-#about p {
-  padding: 3rem 0;
+#main-nav,
+#page-description {
+  border-bottom: 1px solid #ccc;
+}
+
+#page-description {
+  margin: 0 20px;
+}
+
+.pets-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pets-col img {
+  margin: 2rem 0;
+}
+
+#adopt {
+  margin: 0 20px;
+}
+
+.adopt-para p {
+  padding: 1.5rem 0;
 }
 
 /* ============================================= */
@@ -382,7 +409,7 @@ a:hover {
 /* ============================================= */
 .contact-button button {
   padding: 10px 20px;
-  border: none;
+  border: 2px solid pink;
   border-radius: 20px;
   background-color: pink;
   color: white;
@@ -390,7 +417,25 @@ a:hover {
 .contact-button button:hover {
   background-color: whitesmoke;
   color: pink;
+  cursor: pointer;
+}
+
+.adopt-buttons {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+}
+.adopt-buttons button {
+  padding: 10px 20px;
   border: 2px solid pink;
+  border-radius: 5px;
+  background-color: pink;
+  color: white;
+}
+.adopt-buttons button:hover {
+  background-color: whitesmoke;
+  color: pink;
   cursor: pointer;
 }
 
@@ -415,10 +460,10 @@ a:hover {
   flex-direction: column;
 }
 #main-nav nav {
-  margin: 1rem;
+  margin: 0.75rem;
 }
 #main-nav button {
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 
 .site-logo {
@@ -427,10 +472,7 @@ a:hover {
   align-items: center;
 }
 .site-logo img {
-  padding: 0 10px;
-}
-.site-logo h1 {
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .nav-list {
@@ -442,7 +484,6 @@ a:hover {
 }
 .nav-list li {
   padding: 15px 0;
-  margin: 0;
 }
 
 .contact-button {

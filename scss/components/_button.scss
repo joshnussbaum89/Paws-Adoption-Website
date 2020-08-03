@@ -5,14 +5,31 @@
 .contact-button {
     button {
     padding: 10px 20px;
-    border: none;
+    border: 2px solid $pink;
     border-radius: 20px;
     background-color: $pink;
     color: white;
     &:hover{
         background-color: $container;
         color: $pink;
-        border: 2px solid $pink;
+        cursor: pointer;
+    }
+}
+}
+
+.adopt-buttons {
+    padding: 2rem 0;
+    border-bottom: 1px solid $border;
+    @include flexy($just: space-around);
+    button {
+    padding: 10px 20px;
+    border: 2px solid $pink;
+    border-radius: 5px;
+    background-color: $pink;
+    color: white;
+    &:hover{
+        background-color: $container;
+        color: $pink;
         cursor: pointer;
     }
 }

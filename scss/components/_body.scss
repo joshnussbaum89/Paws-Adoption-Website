@@ -10,12 +10,34 @@
     margin-top: 0;
 }
 
-#page-description {
-    @include flexy($dir: column);
-}
-
 #about {
     p {
-        padding: 3rem 0;
+        padding: 2rem 0;
+    }
+}
+
+#main-nav,
+#page-description {
+    border-bottom: 1px solid $border;
+}
+
+#page-description {
+    margin: 0 20px;
+}
+
+.pets-col {
+    @include flexy($dir: column, $align: center);
+    img {
+        margin: 2rem 0;
+    }
+}
+
+#adopt {
+    margin: 0 20px;
+}
+
+.adopt-para {
+    p {
+        padding: 1.5rem 0;
     }
 }
