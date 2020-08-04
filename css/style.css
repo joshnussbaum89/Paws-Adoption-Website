@@ -358,6 +358,7 @@ h3,
 h4,
 h5 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 /* ============================================= */
@@ -399,6 +400,13 @@ h5 {
 
 .adopt-para p {
   padding: 1.5rem 0;
+}
+
+#locations {
+  margin: 0 20px;
+  padding-top: 31.92px;
+  padding-bottom: calc(31.92px * 2);
+  border-bottom: 1px solid #ccc;
 }
 
 /* ============================================= */
@@ -450,6 +458,44 @@ h5 {
 }
 .page-desc-img img {
   width: 90%;
+}
+
+.paws-locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paws-locations img {
+  width: 100%;
+}
+.paws-locations input {
+  width: 100%;
+  padding: 5px 5px 5px 18px;
+  outline: none;
+  border: 1px solid lightpink;
+  border-radius: 4px;
+  margin: 15px 0;
+  box-shadow: 0 2px 1.5px #ccc;
+}
+
+.search-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  position: relative;
+}
+.search-input .locationmarker {
+  width: 13px;
+  right: 25px;
+  top: 22px;
+  position: absolute;
+  align-self: flex-end;
+  z-index: 1000;
+}
+
+.hide-content {
+  display: none;
 }
 
 /* ============================================= */
