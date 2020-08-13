@@ -385,15 +385,6 @@ h5 {
   margin: 0 20px;
 }
 
-.pets-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.pets-col img {
-  margin: 2rem 0;
-}
-
 #adopt {
   margin: 0 20px;
 }
@@ -429,13 +420,15 @@ h5 {
 }
 
 .adopt-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 1rem 0 3rem;
   border-bottom: 1px solid #ccc;
-  text-align: center;
 }
 .adopt-buttons button {
   padding: 10px 30px;
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
   border: 2px solid pink;
   border-radius: 5px;
   background-color: pink;
@@ -456,9 +449,6 @@ h5 {
   padding: 30px 15px;
   margin: 20px 0;
 }
-.page-desc-img img {
-  width: 90%;
-}
 
 .paws-locations {
   display: flex;
@@ -476,6 +466,15 @@ h5 {
   border-radius: 4px;
   margin: 15px 0;
   box-shadow: 0 2px 1.5px #ccc;
+}
+
+.pets-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pets-col img {
+  margin: 2rem 0;
 }
 
 .search-input {

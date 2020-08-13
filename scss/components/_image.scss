@@ -6,9 +6,6 @@
     @include flexy($just: center);
     padding: 30px 15px;
     margin: 20px 0;
-    img {
-    width: 90%;
-}
 }
 
 .paws-locations {
@@ -24,6 +21,13 @@
         border-radius: 4px;
         margin: 15px 0;
         box-shadow: 0 2px 1.5px $border;
+    }
+}
+
+.pets-col {
+    @include flexy($just: space-around, $wrap: wrap);
+    img {
+        margin: 2rem 0;
     }
 }
 
