@@ -10,6 +10,11 @@
     margin-top: 0;
 }
 
+.content-container {
+    width: 90%;
+    margin: auto;
+}
+
 #about {
     p {
         padding: 2rem 0;
@@ -21,12 +26,8 @@
     border-bottom: 1px solid $border;
 }
 
-#page-description {
-    margin: 0 20px;
-}
-
 #adopt {
-    margin: 0 20px;
+    padding-top: 31.92px;
 }
 
 .adopt-para {
@@ -36,7 +37,6 @@
 }
 
 #locations {
-    margin: 0 20px;
     padding-top: 31.92px;
     padding-bottom: calc(31.92px * 2);
     border-bottom: 1px solid $border;

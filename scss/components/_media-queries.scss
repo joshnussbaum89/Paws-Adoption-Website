@@ -2,22 +2,44 @@
 /*              Media Queries                    */
 /* ============================================= */
 
-// @media (min-width: $md) {
-//     #main-nav {
-//         @include flexy($just: space-evenly, $align: center);
+@media (min-width: $md) {
+    #main-nav {
+        @include flexy($dir: row, $just: space-between, $align: center);
+        button {
+            margin: 0;
+        }
+        nav {
+            margin: 0;
+        }
+    }
     
-//     }
-    
-//     .site-logo {
-//         @include flexy($align: center);
-//         flex-grow: 1;
-//     }
-    
-//     .nav-list {
-//         list-style: none;
-//         @include flexy();
-//         li {
-//             padding: 0 15px;
-//         }
-//     }
-// }
+    .nav-list {
+        @include flexy($dir: row, $just: space-between, $align: center);
+        li {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    #page-description {
+        @include flexy($dir: row, $align: center);
+    }
+    .about {
+        margin: 0 60px;
+    }
+    #about,
+    #locations,
+    #contact {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    #adopt {
+        padding-top: 75px;
+    }
+
+    .adopt-buttons {
+        padding-bottom: 75px;
+    }
+}

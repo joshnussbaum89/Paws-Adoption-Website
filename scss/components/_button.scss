@@ -9,6 +9,7 @@
     border-radius: 20px;
     background-color: $pink;
     color: white;
+    transition: .2s;
     &:hover{
         background-color: $container;
         color: $pink;
@@ -28,6 +29,7 @@
     border-radius: 5px;
     background-color: $pink;
     color: white;
+    transition: .2s;
     &:hover{
         background-color: $container;
         color: $pink;
@@ -43,6 +45,7 @@
     border-radius: 5px;
     background-color: $pink;
     color: white;
+    transition: .2s;
     &:hover{
         background-color: $container;
         color: $pink;

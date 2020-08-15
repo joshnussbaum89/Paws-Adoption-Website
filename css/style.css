@@ -348,6 +348,7 @@ template {
 a {
   text-decoration: none;
   color: black;
+  transition: 0.2s;
 }
 a:hover {
   color: pink;
@@ -372,6 +373,11 @@ h5 {
   margin-top: 0;
 }
 
+.content-container {
+  width: 90%;
+  margin: auto;
+}
+
 #about p {
   padding: 2rem 0;
 }
@@ -381,12 +387,8 @@ h5 {
   border-bottom: 1px solid #ccc;
 }
 
-#page-description {
-  margin: 0 20px;
-}
-
 #adopt {
-  margin: 0 20px;
+  padding-top: 31.92px;
 }
 
 .adopt-para p {
@@ -394,7 +396,6 @@ h5 {
 }
 
 #locations {
-  margin: 0 20px;
   padding-top: 31.92px;
   padding-bottom: calc(31.92px * 2);
   border-bottom: 1px solid #ccc;
@@ -412,6 +413,7 @@ h5 {
   border-radius: 20px;
   background-color: pink;
   color: white;
+  transition: 0.2s;
 }
 .contact-button button:hover {
   background-color: whitesmoke;
@@ -433,6 +435,7 @@ h5 {
   border-radius: 5px;
   background-color: pink;
   color: white;
+  transition: 0.2s;
 }
 .adopt-buttons button:hover {
   background-color: whitesmoke;
@@ -447,6 +450,7 @@ h5 {
   border-radius: 5px;
   background-color: pink;
   color: white;
+  transition: 0.2s;
 }
 .contact-form button:hover {
   background-color: whitesmoke;
@@ -601,5 +605,55 @@ h5 {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
+@media (min-width: 768px) {
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #main-nav button {
+    margin: 0;
+  }
+  #main-nav nav {
+    margin: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list li {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  #page-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about {
+    margin: 0 60px;
+  }
+
+  #about,
+#locations,
+#contact {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  #adopt {
+    padding-top: 75px;
+  }
+
+  .adopt-buttons {
+    padding-bottom: 75px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
