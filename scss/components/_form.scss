@@ -1,0 +1,46 @@
+/* ============================================= */
+/*              Form                             */
+/* ============================================= */
+
+#contact {
+    padding: 2rem 0;
+}
+
+.contact-form {
+    position: relative;
+    @include flexy($dir: column);
+    width: 65%;
+    margin: auto;
+    input {
+        z-index: 1000;
+    }
+    input,
+    textarea {
+        padding: 10px 10px;
+        border: 1px solid $border;
+        border-radius: 5px;
+        box-shadow: 0 2px 1.5px $border;
+    }
+    textarea {
+        height: 200px;
+    }
+    .contact-cat1,
+    .contact-cat2 {
+        width: 100px;
+    }
+    .contact-cat1 {
+        position: absolute;
+        bottom: 335px;
+        left: -53px;
+    }
+    .contact-cat2 {
+        z-index: 9999;
+        position: absolute;
+        align-self: flex-end;
+        top: 275px;
+        right: -70px;
+    }
+    .contact-margin {
+        margin: .5rem 0;
+    }
+}

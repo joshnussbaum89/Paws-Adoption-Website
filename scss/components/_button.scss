@@ -35,3 +35,17 @@
     }
 }
 }
+
+.contact-form button {
+    width: 40%;
+    padding: 10px 15px;
+    border: 2px solid $pink;
+    border-radius: 5px;
+    background-color: $pink;
+    color: white;
+    &:hover{
+        background-color: $container;
+        color: $pink;
+        cursor: pointer;
+    }
+}

@@ -362,7 +362,7 @@ h5 {
 }
 
 /* ============================================= */
-/*              Body                            */
+/*              Body                             */
 /* ============================================= */
 .body-container {
   width: 90%;
@@ -438,6 +438,67 @@ h5 {
   background-color: whitesmoke;
   color: pink;
   cursor: pointer;
+}
+
+.contact-form button {
+  width: 40%;
+  padding: 10px 15px;
+  border: 2px solid pink;
+  border-radius: 5px;
+  background-color: pink;
+  color: white;
+}
+.contact-form button:hover {
+  background-color: whitesmoke;
+  color: pink;
+  cursor: pointer;
+}
+
+/* ============================================= */
+/*              Form                             */
+/* ============================================= */
+#contact {
+  padding: 2rem 0;
+}
+
+.contact-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: auto;
+}
+.contact-form input {
+  z-index: 1000;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 1.5px #ccc;
+}
+.contact-form textarea {
+  height: 200px;
+}
+.contact-form .contact-cat1,
+.contact-form .contact-cat2 {
+  width: 100px;
+}
+.contact-form .contact-cat1 {
+  position: absolute;
+  bottom: 335px;
+  left: -53px;
+}
+.contact-form .contact-cat2 {
+  z-index: 9999;
+  position: absolute;
+  align-self: flex-end;
+  top: 275px;
+  right: -70px;
+}
+.contact-form .contact-margin {
+  margin: 0.5rem 0;
 }
 
 /* ============================================= */
